@@ -48,28 +48,21 @@ public class GameActivity extends AppCompatActivity {
 
     protected void onStart() {
         super.onStart();
-        asteroids.updateAsteroidsUI();
-        spaceships.updateSpaceshipUI();
-        hearts.updateHeartUI();
-        //new Handler().postDelayed(this::startTicker, 2000);
+        updateUI();
         startTime();
     }
     private void moveSpaceship(int direction) {
 
-        //Left
         if (direction == 0 && spaceships.getSpaceshipTrace() != 0) {
             spaceships.moveSpaceshipLeft();
         }
 
-        // Right
         else if (direction == 1 && spaceships.getSpaceshipTrace() != 2) {
             spaceships.moveSpaceshipRight();
         }
     }
 
-
-
-    private void updateTimeUI(){
+    private void updateUI(){
         asteroids.updateAsteroidsUI();
         spaceships.updateSpaceshipUI();
         hearts.updateHeartUI();
@@ -79,8 +72,7 @@ public class GameActivity extends AppCompatActivity {
     private Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            //handler.postDelayed(this, 5000); //Do it again in a second
-            updateTimeUI();
+            updateUI();
         }
     };
 
@@ -91,7 +83,6 @@ public class GameActivity extends AppCompatActivity {
             buttons[i].setOnClickListener(v -> moveSpaceship(direction));
         }
     }
-
     private void initViews() {
 
         spaceships.setSpaceship(new ShapeableImageView[]{
@@ -170,38 +161,25 @@ public class GameActivity extends AppCompatActivity {
                 }
             }.start();
         }
-        //new Handler().postDelayed(runnable, 1000);
-        if (moveTimer == null) {
-            moveTimer = new CountDownTimer(999999999, 500) {
-                @Override
-                public void onTick(long millisUntilFinished) {
-                    moveAsteroid();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if (moveTimer == null) {
+                    moveTimer = new CountDownTimer(999999999, 500) {
+                        @Override
+                        public void onTick(long millisUntilFinished) {
+                            moveAsteroid();
+                        }
+                        @Override
+                        public void onFinish() {
+                            moveTimer.cancel();
+                        }
+                    }.start();
                 }
-                @Override
-                public void onFinish() {
-                    moveTimer.cancel();
-                }
-            }.start();
-        }
+            }
+        }, 500 );
+
     }
-//    private void startTicker() {
-//        crateAsteroidT = new Timer();
-//        crateAsteroidT.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                runOnUiThread(asteroids::crateAsteroid);
-//            }
-//        }, 0, 1500);
-//
-//        moveAsteroidT = new Timer();
-//        moveAsteroidT.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                runOnUiThread(() -> moveAsteroid());
-//            }
-//        }, 500, 500);
-//
-//    } //start
 
     private void handleCrash(@NonNull ImageView im) {
         loseLife();
@@ -212,7 +190,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private  void loseLife(){
-        vibrate(1);
+        vibrate();
         hearts.loseLife();
         Context context = getApplicationContext();
         CharSequence text = "Crash!";
@@ -221,12 +199,8 @@ public class GameActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private void vibrate(int style) {
+    private void vibrate() {
         Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        // Vibrate for 500 milliseconds
-        if (style == 1)//boom
-            v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
-        if (style == 2)//click
-            v.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
+        v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
     }
 }

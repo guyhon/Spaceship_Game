@@ -32,7 +32,6 @@ public class Heart {
                 im.setVisibility(View.INVISIBLE);
             else if (heartFlag[i] == 1) {
                 im.setVisibility(View.VISIBLE);
-                //im.setImageResource(R.drawable.main_img_heart);
             }
         }
     }
@@ -46,39 +45,9 @@ public class Heart {
         updateHeartUI();
     }
 
-    public boolean checkFlag (int i){
-        return heartFlag[i] != 0;
-    }
-
-    public  int getHeartValByIndex(int i){
-        return this.heartFlag[i];
-    }
-
-    public void setHeartValByIndex(int i, int val){
-        this.heartFlag[i]=val;
-    }
-
-
-    public int[] getHeartFlag() {
-        return heartFlag;
-    }
-
     public void setHeartFlag(int[] heartFlag) {
         this.heartFlag = heartFlag;
     }
-
-    public int getLife() {
-        return life;
-    }
-
-    public void setLife(int life) {
-        this.life = life;
-    }
-
-    public ImageView[] getHearts() {
-        return hearts;
-    }
-
     public void setHearts(ShapeableImageView[] hearts) {
         this.hearts = hearts;
     }

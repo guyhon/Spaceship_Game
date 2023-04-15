@@ -27,7 +27,6 @@ public class Spaceship  {
                 spaceshipFlag[i] = 0;
             }
         }
-       // updateSpaceshipUI();
     }
 
     public void moveSpaceshipLeft(){
@@ -74,7 +73,5 @@ public class Spaceship  {
     public void setSpaceship(ShapeableImageView[] spaceships) {
         this.spaceships = spaceships;
     }
-
-
 
 }

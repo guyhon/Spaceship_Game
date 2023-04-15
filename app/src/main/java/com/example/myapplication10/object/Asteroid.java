@@ -59,7 +59,6 @@ public class Asteroid {
         for (int[] ints : asteroidFlag) {
             Arrays.fill(ints, 0);
         }
-        //updateAsteroidsUI();
     }
 
     public void updateAsteroids(int i){
