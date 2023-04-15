@@ -3,7 +3,7 @@
   
 
 # Video Of The Game
- https://img.youtube.com/vi/a0jSQxZsnGQ/default.jpg
+ https://ibb.co/sgQ1tL9.jpg
   
 
 # Installation
