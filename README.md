@@ -1,4 +1,4 @@
-#Spaeship Game Part 1
+# Spaeship Game Part 1
 This is a simple 2D racing game built with Java and the Android SDK.
 
 #ScreenShots And Video
