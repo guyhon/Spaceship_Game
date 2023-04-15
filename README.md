@@ -17,7 +17,7 @@
 # Technologies Used
   Java
   
-  Android SDK
+  Android Studio
 
 # Contributors
   Guy Honen guyh146@gmail.com
