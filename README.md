@@ -1,5 +1,5 @@
 # Spaeship Game Part 1
-  This is a 2D spaceship game built with Java and the Android SDK.
+  This is a 2D spaceship game built with Java and Android SDK.
   
 
 # Video Of The Game
