@@ -1,9 +1,9 @@
 # Spaeship Game Part 1
-  This is a simple 2D racing game built with Java and the Android SDK.
+  This is a 2D spaceship game built with Java and the Android SDK.
   
 
 # Video Of The Game
- [![Watch the video](https://img.youtube.com/vi/a0jSQxZsnGQ/default.jpg)](https://www.youtube.com/shorts/a0jSQxZsnGQ)
+ [![Watch the video](https://ibb.co/sgQ1tL9).jpg)](https://www.youtube.com/shorts/a0jSQxZsnGQ)
   
 
 # Installation
@@ -16,6 +16,7 @@
 
 # Technologies Used
   Java
+  
   Android SDK
 
 # Contributors
