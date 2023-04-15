@@ -2,9 +2,10 @@
   This is a simple 2D racing game built with Java and the Android SDK.
   
 
-# ScreenShots And Video
-  Watch the video
-  https://ibb.co/sgQ1tL9
+# Video Of The Game
+  ![alt text][image]
+  [image]: https://ibb.co/sgQ1tL9
+  
 
 # Installation
   To install and run this game, clone the repository to your local machine and open the project in Android Studio. You can then build the app and install it on your      Android device or emulator.
