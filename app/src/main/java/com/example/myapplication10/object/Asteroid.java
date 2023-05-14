@@ -1,6 +1,5 @@
 package com.example.myapplication10.object;
 
-import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -14,15 +13,21 @@ import java.util.Random;
 public class Asteroid {
 
     private ShapeableImageView[][] asteroids;
-    private int[][] asteroidFlag;
-    private int asteroidInGame;
+    protected int[][] asteroidFlag;
+    protected int asteroidInGame;
     private Random asteroidStart;
-    private ArrayList<Integer> asteroidIndex;
+
+    //private Random CoinStart;
+    protected ArrayList<Integer> asteroidIndex;
 
     public Asteroid(){}
 
     public void setAsteroidFlagInIndex( int i ,int j, int value) {
         this.asteroidFlag[i][j] = value;
+    }
+
+    public int getAsteroidFlagInIndex( int i ,int j) {
+        return asteroidFlag[i][j];
     }
 
     public int[][] getAsteroidFlag() {
@@ -51,7 +56,7 @@ public class Asteroid {
 
     public  void initAsteroid(){
 
-        setAsteroidFlag(new int[asteroids.length][asteroids[0].length]);
+        setAsteroidFlag(new int[asteroids.length+1][asteroids[0].length]);
         asteroidInGame = 0;
         asteroidStart = new Random();
         asteroidIndex = new ArrayList<>();
@@ -62,11 +67,12 @@ public class Asteroid {
     }
 
     public void updateAsteroids(int i){
-        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) ,(getAsteroidIndex().get(i) % 10), 0) ; //remove old
-        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) + 1,(getAsteroidIndex().get(i) % 10), 1) ; //new
+        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) ,(getAsteroidIndex().get(i) % 10), 0) ;
+        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) + 1,(getAsteroidIndex().get(i) % 10), 1) ;
         getAsteroidIndex().set(i,getAsteroidIndex().get(i) + 10);
         updateAsteroidsUI();
     }
+
 
 
 
@@ -79,13 +85,16 @@ public class Asteroid {
                 } else if (asteroidFlag[i][j] == 1) {
                     im.setVisibility(View.VISIBLE);
                     im.setImageResource(R.drawable.asteroid_2);
+                } else if (asteroidFlag[i][j] == 2) {
+                    im.setVisibility(View.VISIBLE);
+                    im.setImageResource(R.drawable.coin_4);
                 }
             }
         }
     }
 
     public void crateAsteroid() {
-        int n = asteroidStart.nextInt(3);
+        int n = asteroidStart.nextInt(5);
         if (asteroidFlag[0][n] == 0) {
             asteroidFlag[0][n] = 1;
             asteroidIndex.add(n);
@@ -94,6 +103,43 @@ public class Asteroid {
         updateAsteroidsUI();
     }
 
+    public void crateCoin(){
+        int n = asteroidStart.nextInt(5);
+        if (asteroidFlag[0][n] == 0) {
+            asteroidFlag[0][n] = 2;
+            asteroidIndex.add(n);
+        }
+        asteroidInGame++;
+        updateAsteroidsUI();
+    }
 
+    public boolean isCoin(int i, int j){
+        if(getAsteroidFlagInIndex(i ,j ) == 2)
+            return true;
+        else
+            return false;
+
+    }
+
+    public void updateCoins(int i){
+        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) ,(getAsteroidIndex().get(i) % 10), 0) ;
+        setAsteroidFlagInIndex( (getAsteroidIndex().get(i) / 10) + 1,(getAsteroidIndex().get(i) % 10) , 2) ;
+        getAsteroidIndex().set(i,getAsteroidIndex().get(i) + 10);
+        updateAsteroidsUI();
+    }
+
+//    public void updateCoinsUI() {
+//        for (int i = 0; i < asteroids.length; i++) {
+//            for (int j = 0; j < asteroids[i].length; j++) {
+//                ImageView im = asteroids[i][j];
+//                if (asteroidFlag[i][j] == 0) {
+//                    im.setVisibility(View.INVISIBLE);
+//                } else if (asteroidFlag[i][j] == 2) {
+//                    im.setVisibility(View.VISIBLE);
+//                    im.setImageResource(R.drawable.coin_1);
+//                }
+//            }
+//        }
+//    }
 
 }

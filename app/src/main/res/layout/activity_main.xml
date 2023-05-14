@@ -51,8 +51,8 @@
         android:id="@+id/main_Grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnCount="3"
-        android:rowCount="5"
+        android:columnCount="5"
+        android:rowCount="6"
         android:layout_marginVertical="80dp">
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -95,6 +95,32 @@
              />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_03"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_04"
+            android:layout_gravity="fill"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_10"
             android:layout_gravity="fill"
             android:layout_column="0"
@@ -134,6 +160,32 @@
              />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_13"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_14"
+            android:layout_gravity="fill"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_20"
             android:layout_gravity="fill"
             android:layout_column="0"
@@ -163,6 +215,32 @@
             android:id="@+id/main_IMG_22"
             android:layout_gravity="fill"
             android:layout_column="2"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_23"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_24"
+            android:layout_gravity="fill"
+            android:layout_column="4"
             android:layout_row="2"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -212,7 +290,33 @@
             />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_40spaceship"
+            android:id="@+id/main_IMG_33"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_34"
+            android:layout_gravity="fill"
+            android:layout_column="4"
+            android:layout_row="3"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_40"
             android:layout_gravity="fill"
             android:layout_column="0"
             android:layout_row="4"
@@ -221,14 +325,66 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            app:srcCompat="@drawable/spaceship_3"
+            app:srcCompat="@drawable/asteroid_2"
             />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_41spaceship"
+            android:id="@+id/main_IMG_41"
             android:layout_gravity="fill"
             android:layout_column="1"
             android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_42"
+            android:layout_gravity="fill"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_43"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_44"
+            android:layout_gravity="fill"
+            android:layout_column="4"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/asteroid_2"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_50"
+            android:layout_gravity="fill"
+            android:layout_column="0"
+            android:layout_row="5"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_weight="1"
@@ -238,10 +394,49 @@
             />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/main_IMG_42spaceship"
+            android:id="@+id/main_IMG_51"
+            android:layout_gravity="fill"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/spaceship_3"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_52"
             android:layout_gravity="fill"
             android:layout_column="2"
-            android:layout_row="4"
+            android:layout_row="5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/spaceship_3"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_53"
+            android:layout_gravity="fill"
+            android:layout_column="3"
+            android:layout_row="5"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/spaceship_3"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_54"
+            android:layout_gravity="fill"
+            android:layout_column="4"
+            android:layout_row="5"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_weight="1"
@@ -302,7 +497,7 @@
             android:layout_marginTop="0dp"
             android:layout_marginEnd="0dp"
             android:text="000"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
 

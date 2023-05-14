@@ -20,9 +20,9 @@ public class Spaceship  {
 
         spaceshipFlag = new int[spaceships.length];
         for (int i = 0; i < spaceshipFlag.length; i++) {
-            if (i == 1) {
+            if (i == 2) {
                 spaceshipFlag[i] = 1;
-                SpaceshipTrace = 1;
+                SpaceshipTrace = 2;
             } else {
                 spaceshipFlag[i] = 0;
             }

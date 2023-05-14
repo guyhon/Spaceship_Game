@@ -1,12 +1,7 @@
 package com.example.myapplication10.object;
 
-import static androidx.core.content.ContextCompat.getSystemService;
-
-import android.content.Context;
-import android.os.Vibrator;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.google.android.material.imageview.ShapeableImageView;
 
@@ -51,4 +46,19 @@ public class Heart {
     public void setHearts(ShapeableImageView[] hearts) {
         this.hearts = hearts;
     }
+
+//    public static class Score {
+//
+//        public class Score {
+//
+//            private int score;
+//
+//            public Score(int points){
+//                this.score = points;
+//            }
+//            public int getScore() {
+//                return score;
+//            }
+//        }
+//    }
 }
