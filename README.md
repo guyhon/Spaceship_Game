@@ -18,16 +18,19 @@
   git clone: https://github.com/guyhon/Spaceship_Game.git
 
 # Launch
-  To start playing click on the application icon on your device. You will be taken to the Menu, where you should choose If you want to play fast or slow, And with the help   of the switch you can choose between playing with buttons or playing with sensors. In addition, you can also go directly to the score table:
+  To start playing click on the application icon on your device. You will be taken to the Menu, where you should choose If you want to play fast or slow, And with the help   of the switch you can choose between playing with buttons or playing with sensors. In addition, you can also go directly to the score table.
   
-  
-  
-![2b2176ea-6cbe-4258-80a3-ea5efca4c127](https://github.com/guyhon/Spaceship_Game/assets/74957640/c73c5546-274f-4917-b665-1229cbe64b0e)
 
 # Technologies Used
-  Java
-  
-  Android Studio
+  Programming language: The game was created using Java in Android Studio.
+
+  Libraries: The game uses the Gson library to save data using Shared Preferences.
+
+  APIs: The game utilizes the Google Maps API to display locations of records on a map.
+
+  Build tools: Gradle is used to build and package the game for distribution.
+
+  Platforms and devices: The game is suitable for Android devices.
 
 # Contributors
   Guy Honen guyh146@gmail.com
