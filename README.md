@@ -20,6 +20,10 @@
 # Launch
   To start playing click on the application icon on your device. You will be taken to the Menu, where you should choose If you want to play fast or slow, And with the help   of the switch you can choose between playing with buttons or playing with sensors. In addition, you can also go directly to the score table.
   
+  <img src= 829f5549-0470-4884-8645-9d0f003ee305 alt="menu"
+  width="240" height="300" border="10" />
+  </a>
+  
 
 # Technologies Used
   Programming language: The game was created using Java in Android Studio.
