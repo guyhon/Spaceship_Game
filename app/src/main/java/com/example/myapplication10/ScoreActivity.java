@@ -57,15 +57,5 @@ public class ScoreActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().add(R.id.main_FRAME_map, mapFragment).commit();
     }
 
-//    public void getLocationPermission() {
-//        String[] permissions = {ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION};
-//        if (ContextCompat.checkSelfPermission(this.getApplicationContext(), ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-//            if (ContextCompat.checkSelfPermission(this.getApplicationContext(), ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-//                locationPermissionsGranted = true;
-//            }
-//        }else {
-//            ActivityCompat.requestPermissions(this, permissions, LOCATION_PERMISSION_CODE);
-//        }
-//    }
 
 }

@@ -31,7 +31,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
-    //AIzaSyBeX6ViGnMShEvlK-Z3Kxa_VProP9CJZX8
+
     private TextView map_LBL_title;
     private GoogleMap gMap;
 
@@ -94,17 +94,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         gMap.addMarker(options);
     }
 
-//    public boolean isServicesOK(){
-//        Log.d(TAG, "isServicesOK: checking google services version");
-//
-//        int available = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this.getContext());
-//        if(available == ConnectionResult.SUCCESS){
-//            Log.d("TAG", "isServicesOK: Google play Services is working");
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
 
     public static boolean isLocationEnabled(Context context) {
         LocationManager locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);

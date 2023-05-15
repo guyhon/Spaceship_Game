@@ -79,7 +79,6 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View view) {
                 points =0;
                 Intent intent = new Intent(MenuActivity.this, ScoreActivity.class);
-                //intent.putExtra("points", points);
                 startActivity(intent);
             }
         });

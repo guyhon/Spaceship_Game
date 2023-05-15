@@ -62,8 +62,6 @@ public class GameActivity extends AppCompatActivity {
 
     private int life = 3;
 
-    //private FusedLocationProviderClient mFusedLocationProviderClient;
-
 
     private static final String TAG = "GameActivity";
 
@@ -107,7 +105,7 @@ public class GameActivity extends AppCompatActivity {
 
         for (int i = 0; i < buttons.length; i++) {
             int direction = i;
-            buttons[i].setVisibility(View.INVISIBLE);;
+            buttons[i].setVisibility(View.INVISIBLE);
         }
         stepDetector = new StepDetector(this, new StepCallback() {
             @Override
