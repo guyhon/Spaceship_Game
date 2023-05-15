@@ -21,7 +21,7 @@
   To start playing click on the application icon on your device. You will be taken to the Menu, where you should choose If you want to play fast or slow, And with the help   of the switch you can choose between playing with buttons or playing with sensors. In addition, you can also go directly to the score table.
   
   <img src=https://github.com/guyhon/Spaceship_Game/assets/74957640/1b51d4c2-17a0-4c81-addb-e34c2f07f17f
-  width="240" height="300" border="10" />
+  width="250" height="350" border="10" />
   </a>
   
 
